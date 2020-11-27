@@ -1,0 +1,481 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.header {
+    display: flex;
+    height: 72px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0px 0px 16px #626262;
+    background: white;
+    z-index: 30;
+}
+.header-logo {
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-bottom: 29px;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav__item-buttonLogin {
+    display: block;
+    height: 40px;
+    width: 78px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #E0E0E0 ;
+    margin-top: 16px;
+    margin-right: 27px;
+}
+.header-nav__item-buttonBasket {
+    display: none;
+    padding-top: 25px;
+    padding-right: 18px;
+}
+.main {
+    max-width: 956px;
+    margin: 0 auto;
+}
+.search {
+    margin-left: 8px;
+    margin-right: 4px;
+    padding-top: 127px;
+    border-bottom: 1px solid #efefef ;
+    color: #626262;
+    font-size: 16px;
+}
+.search input{
+    width: 100%;
+    border: none;
+}
+.baner {
+    padding-top: 72px;
+    position: relative;
+}
+.baner__img-container {
+    display: flex;
+    width: 100%;
+    height: 256px;
+    background-image: url(content/1q2w3e4r.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-header{
+    font-size: 22px;
+    padding-left: 8px;
+}
+.restauraunt-header {
+    background: white;
+    min-width: 308px;
+    min-height: 180px;
+    position: absolute;
+    left: 2.5%;
+    top: 60%;
+    z-index: 3;
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px
+
+}
+.restauraunt-header__name {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.restauraunt-header__tags {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #626262;
+    text-align: center;
+}
+.restauraunt-header__timeDelivery{
+    display: block;
+    width: 98px;
+    height: 32px;
+    background: #262626;
+    border-radius: 16px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 32px;
+}
+.main-content {
+    display: grid;
+    grid-template: repeat(10,10%)/repeat(1, 100%);
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.tab-btn {
+    padding-right: 40px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+.content-item__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.content-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+.content-item:hover {
+    background-color: #f9f9f9 ;
+    padding: 0;
+    transition: 0.3s;
+}
+.content-item__link {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.content-item a {
+    text-decoration: none;
+}
+.content-item__text {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.content-item__name {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 0 0;
+    margin-top: 16px;
+}
+.content-item__tags {
+    font-size: 14px;
+    margin: 4px 0;
+    color:rgba(98, 98, 98, 1);
+}
+.content-item__timeDelivery {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.container-food{
+    padding-bottom: 40px;
+}
+.container-food img{
+    width: 102px;
+    height: auto;
+}
+.container-food__item {
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+.footer {
+    background-color: #262626;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px; 
+    padding-bottom: 40px;
+}
+.footer-wrapperBackground {
+    max-width: 956px;
+    margin: 0 auto;
+}
+.footer-logo {
+    display: flex;
+    height: 116px;
+    border-bottom: 1px solid #7d7d7d;  
+    align-items: center;
+}
+.footer-selectLanguage {
+    margin-top: 32px;
+    height: 40px;
+    width: 173px;
+    padding-left: 48px;
+    background: #3B3B3B;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 13px;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    appearance: none;
+    background-image: url('content/language.png');
+    background-size: cover;
+}
+.footer-socialLink p{
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 21px;
+}
+.footer-socialLink span {
+    color: #49A144;
+}
+.footer-socialLink a {
+    padding-right: 20px;
+}
+.footer-nav__link1Column,
+.footer-nav__link2Column {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 23px;
+
+}
+.footer-appsLink {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 84px;
+    border-top: 1px solid #7d7d7d;
+    border-bottom: 1px solid #7d7d7d;
+}
+.footer-about a,p {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1124px){
+    .header-nav__item-buttonBasket {
+        display: block;
+    }
+    .main-content {
+        margin:0 0;
+        grid-template: repeat(5,20%)/repeat(2, 50%);
+        justify-content: space-between;
+    }
+    .footer-wrapperForAdaptive {
+        display: grid;
+        grid-template: repeat(1, auto)/repeat(3, 33.3333%);
+    }
+    .footer-wrapperForAdaptive__item1 {
+        grid-column: 1 / 2;
+        grid-row: 1/2;
+    }
+    .footer-wrapperForAdaptive__item2 {
+        padding-top: 16px;
+        grid-column: 2 / 3;
+        grid-row: 1/2;
+    }
+    .footer-wrapperForAdaptive__item3 {
+        padding-top: 16px;
+        grid-column: 3 / 4;
+        grid-row: 1/2;
+    }
+    .footer-about a,
+    .footer-about p {
+        display: inline;
+        margin: 0 0;
+        padding-top: 40px ;
+    }
+    .footer-about {
+        display: flex;
+        justify-content: space-between;
+    }
+    .baner__img-container {
+        width: 100%;
+        height: 364px;
+        background-image: url(content/1q2w3e4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .restauraunt-header {
+        min-width: 432px;
+        min-height: 204px;
+        /* left: 8px; */
+        top: 152px;
+    }
+    .restauraunt-header__name{
+        font-size: 36px;
+    }
+    .restauraunt-header__tags {
+        margin: auto 0;
+    }
+    .restauraunt-header__timeDelivery {
+        margin: auto 0; 
+    }
+    .restauraunt-header__description {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10%; 
+    }
+    .tab {
+        margin-top: 0;
+        padding: 32px 0 29px 8px;
+        border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    }
+    .tab-btn {
+        padding-right: 40px;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .container-food__name-tab {
+        font-size: 22px;
+        padding: 56px 0 32px 8px;
+    }
+    .container-food{
+        padding-bottom: 48px;
+    }
+    .container-food__item {
+        border: 1px solid rgba(117, 117, 117, 0.2);
+    }
+    .container-food img{
+        min-width: 160px;
+        height: auto;
+    }
+}
+@media screen and (min-width: 1124px) {
+    .main-content {
+        max-width: 956px;
+        margin:0 auto;
+        grid-template: repeat(3,33.3333%)/repeat(3, 33.3333%);
+        justify-content: space-between;
+    }
+    .header-nav__item-buttonBasket {
+        display: block;
+    }
+    .footer-wrapperForAdaptive {
+        display: grid;
+        grid-template: repeat(1, auto)/repeat(3, 33.3333%);
+    }
+    .footer-wrapperForAdaptive__item1 {
+        grid-column: 1 / 2;
+        grid-row: 1/2;
+    }
+    .footer-wrapperForAdaptive__item2 {
+        padding-top: 16px;
+        grid-column: 2 / 3;
+        grid-row: 1/2;
+    }
+    .footer-wrapperForAdaptive__item3 {
+        padding-top: 16px;
+        grid-column: 3 / 4;
+        grid-row: 1/2;
+    }
+    .footer-about a,
+    .footer-about p {
+        display: inline;
+        margin: 0 0;
+        padding-top: 40px ;
+    }
+    .footer-about {
+        display: flex;
+        justify-content: space-between;
+    }
+    .baner__img-container {
+        height: 364px;
+        background-image: url(content/1q2w3e.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .restauraunt-header {
+        min-width: 389px;
+        min-height: 204px;
+        left: 7%;
+        top: 152px;
+    }
+    .restauraunt-header__name{
+        font-size: 36px;
+    }
+    .restauraunt-header__tags {
+        margin: auto 0;
+    }
+    .restauraunt-header__timeDelivery {
+        margin: auto 0; 
+    }
+    .restauraunt-header__description {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10%; 
+    }
+    .tab {
+        margin-top: 0;
+        padding: 32px 0 29px 8px;
+        border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    }
+    .tab-btn {
+        padding-right: 40px;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .container-food__name-tab {
+        font-size: 22px;
+        padding: 56px 0 32px 8px;
+    }
+    .container-food {
+        display: grid;
+        margin:0 0;
+        grid-template: repeat(5,20%)/repeat(2, 50%);
+        justify-content: space-between;
+        padding-bottom: 80px;
+    }
+    .container-food__item {
+        border: 1px solid rgba(117, 117, 117, 0.2);
+    }
+    .container-food img{
+        min-width: 160px;
+        height: auto;
+    }
+}
+
+
+
+.tabs {
+    font-size: 0;
+    margin-top: 50px;
+}
+  
+.tabs>input[type="radio"] {
+    display: none;
+}
+  
+.tabs>div {
+    display: none;
+    font-size: 16px;
+}
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4,
+#tab-btn-5:checked~#content-5,
+#tab-btn-6:checked~#content-6 {
+    display: block;
+}
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 2px 8px;
+    font-size: 16px;
+    color: rgba(98, 98, 98, 1);
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+  
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+}
+  
+.tabs>input[type="radio"]:checked+label {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    color: green;
+}
