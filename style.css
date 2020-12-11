@@ -134,7 +134,9 @@ html,body{
 }
 .content-item:hover {
     background-color: #f9f9f9 ;
-    padding: 0;
+    border:none;
+    box-shadow: 2px 2px 5px #7d7d7d;
+    padding-top: 0;
     transition: 0.3s;
 }
 .content-item__link {
@@ -168,13 +170,48 @@ html,body{
 .container-food{
     padding-bottom: 40px;
 }
-.container-food img{
-    width: 102px;
-    height: auto;
+.container-food__item-link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #262626;
+    flex-direction: row-reverse;
+    max-height: 117px;
+}
+.container-food__item-img {
+    max-width: 117px;
+    max-height: 100%;
 }
 .container-food__item {
-    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    margin: 0.5rem;
+    box-shadow: 2px 2px 5px rgb(158, 149, 149);
+    
+    
 }
+.container-food__item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+.container-food__item-name {
+    font-size: 14px;
+    font-weight: 400;
+}
+.container-food__item-tags {
+    font-size: 13px;
+    font-weight: 400;
+    color: #626262;
+}
+.container-food__item-prise {
+    font-size: 15px;
+    font-weight: 500;
+}
+.container-food__item:hover {
+    background-color: #f5f3e4;
+}
+
 .footer {
     background-color: #262626;
     color: white;
@@ -227,6 +264,9 @@ html,body{
     font-size: 13px;
     margin-top: 23px;
 
+}
+.footer-nav__link:hover {
+    color: #57ad56;
 }
 .footer-appsLink {
     margin-top: 40px;
@@ -321,19 +361,18 @@ html,body{
         background-color: transparent;
         cursor: pointer;
     }
-    .container-food__name-tab {
-        font-size: 22px;
-        padding: 56px 0 32px 8px;
-    }
     .container-food{
         padding-bottom: 48px;
     }
-    .container-food__item {
-        border: 1px solid rgba(117, 117, 117, 0.2);
+    .container-food__item-link {
+        max-height: 160px;  
     }
-    .container-food img{
-        min-width: 160px;
-        height: auto;
+    .container-food__item-img{
+        max-width: 200px;
+        max-height: 100%;
+    }
+    .container-food__item-name {
+        font-size: 1rem;
     }
 }
 @media screen and (min-width: 1124px) {
@@ -424,12 +463,15 @@ html,body{
         justify-content: space-between;
         padding-bottom: 80px;
     }
-    .container-food__item {
-        border: 1px solid rgba(117, 117, 117, 0.2);
+    .container-food__item-link {
+        max-height: 160px;  
     }
-    .container-food img{
-        min-width: 160px;
-        height: auto;
+    .container-food__item-img{
+        max-width: 170px;
+        max-height: 100%;
+    }
+    .container-food__item-name {
+        font-size: 1rem;
     }
 }
 
